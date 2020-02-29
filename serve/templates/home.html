@@ -1,0 +1,7 @@
+{% extends 'base.html' %} 
+
+{% block body %}
+    {% for q in object_list %}
+        <h1>{{ q.year }}</h1>
+    {% endfor %}
+{% endblock %}
