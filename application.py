@@ -7,5 +7,6 @@ if __name__ == '__main__':
     if arg == 'parse':
         obj = Scraping.Scraping()
         obj.parse()
+        obj.db()
     else:
         print('Working!!!!!!!')
