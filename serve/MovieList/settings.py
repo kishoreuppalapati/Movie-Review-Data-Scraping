@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'MovieList.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'movie.sqlite'),
+        'NAME': os.path.join(BASE_DIR, 'db/movie.sqlite'),
     }
 }
 
