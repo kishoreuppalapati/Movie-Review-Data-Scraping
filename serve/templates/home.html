@@ -1,7 +1,17 @@
 {% extends 'base.html' %} 
 
 {% block body %}
-    <h1>Check......</h1>
-    {{  object_list }}
-    
+    <h1 align='center'>Movie Data</h1>
+    {%  for q in object_list %}
+    <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">{{ q.Id }}</th>
+            <td>{{ q.Name }}</td>
+            <td>{{ q.YearNo }}</td>
+            <td>{{ q.Award }}</td>
+          </tr>
+        </tbody>
+    </table>   
+    {% endfor %}
 {% endblock %}
