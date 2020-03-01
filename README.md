@@ -24,3 +24,8 @@ $ python application.py parse
 ```
 $ python application.py serve
 ```
+
+### To sync with Database
+```
+$ python serve/manage.py migrate --run-syncdb
+```
