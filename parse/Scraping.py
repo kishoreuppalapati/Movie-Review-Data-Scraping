@@ -60,7 +60,7 @@ class Scraping:
             page.close()
         
     def db(self):
-        con = sqlite3.connect('./db/movie.sqlite')
+        con = sqlite3.connect('./serve/db/movie.sqlite')
         cur = con.cursor()
 
         cur.execute('DROP TABLE IF EXISTS Movie')
