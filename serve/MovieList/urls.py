@@ -1,7 +1,8 @@
 
-from django.urls import path
+from django.urls import path, include
 from serve import views
 
 urlpatterns = [
-    path('', views.HomeView.as_view(), name="home"),
+    path('', include('serve.urls')),
+    path('movie/', include('api.urls'))
 ]
