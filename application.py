@@ -12,5 +12,4 @@ if __name__ == '__main__':
         obj.db()
         
     elif arg == 'serve':
-        shutil.copy('./db/movie.sqlite', './serve/')
         os.system('python serve/manage.py runserver 8080')
